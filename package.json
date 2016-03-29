@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "node ./node_modules/.bin/tsc",
     "test": "node ./node_modules/.bin/jasmine-node --color ./spec",
-    "postinstall": "node ./node_modules/.bin/tsd install",
+    "postinstall": "node ./node_modules/.bin/typings install",
     "prestart": "node ./node_modules/.bin/tsc",
     "start": "node src/index.js"
   },
@@ -15,8 +15,8 @@
   "dependencies": {
     "commander": "^2.9.0",
     "rx": "^4.1.0",
-    "tsd": "^0.6.5",
-    "typescript": "^1.8.7"
+    "typescript": "^1.8.7",
+    "typings": "^0.7.9"
   },
   "devDependencies": {
     "jasmine": "^2.4.1",

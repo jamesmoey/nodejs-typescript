@@ -1,6 +1,6 @@
 node_modules/
 .idea/
-typings/
+typings/*
 src/*.js
 src/*.js.map
 spec/*.js
