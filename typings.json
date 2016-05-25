@@ -3,6 +3,8 @@
     "commander": "registry:dt/commander#2.3.0+20160317120654",
     "jasmine": "registry:dt/jasmine#2.2.0+20160317120654",
     "node": "registry:dt/node#4.0.0+20160319033040",
-    "rx": "npm:rx/ts/rx.all.d.ts"
+    "rx": "npm:rx/ts/rx.all.d.ts",
+    "nock": "registry:dt/nock#0.54.0+20160423135543",
+    "mockery": "registry:dt/mockery#1.4.0+20160316155526"
   }
 }

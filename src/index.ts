@@ -1,7 +1,4 @@
-/**
- * Created by james on 16/03/16.
- */
-
+import 'source-map-support/register';
 import { Command } from 'commander';
 
 (new Command('logCapture'))

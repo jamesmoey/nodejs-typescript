@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "pretest": "node ./node_modules/.bin/tsc",
-    "test": "node ./node_modules/.bin/jasmine-node --color ./spec",
-    "postinstall": "node ./node_modules/.bin/typings install",
+    "test": "node ./node_modules/.bin/jasmine",
+    "posttest": "node ./node_modules/.bin/remap-istanbul -i coverage/coverage.json -o coverage/lcov-report -t html",
+    "postinstall": "node ./node_modules/.bin/typings install && node ./node_modules/.bin/tsc",
     "prestart": "node ./node_modules/.bin/tsc",
     "start": "node src/index.js"
   },
@@ -15,11 +16,14 @@
   "dependencies": {
     "commander": "^2.9.0",
     "rx": "^4.1.0",
+    "source-map-support": "^0.4.0",
     "typescript": "^1.8.7",
     "typings": "^0.7.9"
   },
   "devDependencies": {
     "jasmine": "^2.4.1",
-    "jasmine-node": "^1.14.5"
+    "mockery": "^1.7.0",
+    "nock": "^8.0.0",
+    "remap-istanbul": "^0.6.4"
   }
 }
